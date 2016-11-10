@@ -1,0 +1,17 @@
+h1 scr Transaction
+
+h2 scr #{res}
+
+
+table
+	table(border=1)
+		-each scr in data
+			tr
+				td #{scr.user_id}
+				td #{scr.score}
+				td #{scr.reasons}
+				td #{scr.latest_label}
+				td #{scr.status}
+				td #{scr.error_message}
+				td #{scr.good}
+				td #{scr.match_result}

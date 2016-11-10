@@ -1,0 +1,9 @@
+doctype
+h1 Semua Data Transaction
+
+ul
+   - each txn in data
+    li
+        a(href="/transaction/#{txn.uuid}") #{txn.nim} (#{txn.nama})
+    
+a(href="/transaction/baru") tambah data    

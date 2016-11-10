@@ -1,0 +1,24 @@
+h1 txn Transaction
+
+h2 txn #{res}
+
+
+p: a(href="/transaction/baru") Add txn
+
+table
+	table(border=1)
+		-each txn in data
+			tr
+				td: a(href="/transaction/#{txn.merchant_id}") #{txn.merchant_id}
+				td #{txn.card_bin}
+				td #{txn.amount_authorize}
+				td #{txn.time}
+				td #{txn.sector}
+				td #{txn.fraud_result}
+				td #{txn.ip_address}
+				td #{txn.email}
+				td #{txn.customer_phone}
+				td #{txn.billing_country}
+				td #{txn.shipping_phone}
+				td #{txn.country_code}
+				td #{txn.merchant}

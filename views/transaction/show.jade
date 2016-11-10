@@ -1,0 +1,22 @@
+h1 #{data.email}
+
+ul
+    li uuid 			: #{data.merchant_id}
+    li card_bin 		: #{data.card_bin}
+    li amount 			: #{data.amount}
+    li times 			: #{data.times}
+    li sector 			: #{data.sector}
+    li fraud_result 	: #{data.fraud_result}
+    li ip_address 		: #{data.ip_address}
+    li email 			: #{data.email}
+    li customer_phone 	: #{data.customer_phone}
+    li billing_country 	: #{data.billing_country}
+    li shipping_phone 	: #{data.shipping_phone}
+    li merchant 		: #{data.merchant}
+    
+ ul
+    li: a(href="/transaction/#{data.uuid}/edit") Edit
+    li
+        form(action='/transaction/#{data.uuid}' , method='POST')
+           input(type="hidden", name="_method", value="DELETE")
+           button(type="submit") Delete

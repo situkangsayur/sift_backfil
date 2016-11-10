@@ -1,0 +1,35 @@
+
+h1 Edit Data Mahasiswa
+   
+     
+form(method="POST", action="/transaction/#{data.uuid}")
+    input(type="hidden", name="_method" , value="PUT")
+    p uuid
+        input#uuid(type"text", name="uuid", value = "#{data.uuid}")
+    p card_bin
+        input#card_bin(type"text", name="card_bin", value = "#{data.card_bin}")
+    p amount
+        input#amount(type"text", name="amount", value = "#{data.amount}")
+    p times
+        input#times(type"text", name="times", value = "#{data.times}")
+    p sector
+        input#sector(type"text", name="sector", value = "#{data.sector}")
+    p fraud_result
+        input#fraud_result(type"text", name="fraud_result", value = "#{data.fraud_result}")
+    p ip_address
+        input#ip_address(type"text", name="ip_address", value = "#{data.ip_address}")
+    p email
+        input#email(type"text", name="email", value = "#{data.email}")
+    p customer_phone
+        input#customer_phone(type"text", name="customer_phone", value = "#{data.customer_phone}")
+    p billing_country
+        input#billing_country(type"text", name="billing_country", value = "#{data.billing_country}")
+    p shipping_phone
+        input#shipping_phone(type"text", name="shipping_phone", value = "#{data.shipping_phone}")
+    p country_code
+        input#country_code(type"text", name="country_code", value = "#{data.country_code}")
+    p merchant
+        input#merchant(type"text", name="merchant", value = "#{data.merchant}")            
+    p: button(type="submit") update
+    
+        
